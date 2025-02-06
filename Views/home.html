@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | InLib</title>
+    <link rel="shortcut icon" href="/public/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="/public/js/scripts.js" defer></script>
+</head>
+
+<body>
+
+    <!--============================= CABEÇALHO =============================-->
+    <header class="cabecalho">
+        <a href="home.html">
+            <div class="logo">
+                <img src="/public/images/logo.png" alt="logo Inlib">
+            </div>
+        </a>
+        <nav class="menu">
+            <ul class="list">
+                <li class="item">
+                    <a href="#" class="link">Home</a>
+                </li>
+                <li class="item">
+                    <a href="biblioteca.html" class="link">Biblioteca</a>
+                </li>
+                <li class="item">
+                    <a href="doacoes.html" class="link">Doações de Livros</a>
+                </li>
+                <li class="item">
+                    <a href="suporte.html" class="link">Suporte</a>
+                </li>
+                <li class="item">
+                    <a href="faq.html" class="link">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="icons">
+            <a href="#" class="icon-link"><i class='bx bx-search-alt-2'></i></a>
+            <a href="#" class="icon-link"><i class='bx bx-heart'></i></a>
+            <a href="perfil.html" class="icon-link"><i class='bx bx-user'></i></a>
+        </nav>
+    </header>
+
+    <!--============================= HERO =============================-->
+    <div class="hero">
+
+        <!-- Swiper -->
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide-hero-one">
+                    <h1>Impulsionando a Leitura</h1>
+                    <p>"Estude, aprenda e expanda seus horizontes sem sair de casa."</p>
+                    <a href="#cat">Ir para o Catálogo</a>
+                </div>
+                <div class="swiper-slide slide-hero-two">
+                    <h1>Uma Experiência de Leitura Inovadora</h1>
+                    <p>Leia seus livros favoritos com animações 3D envolventes e uma interface imersiva. Um jeito
+                        moderno e dinâmico de estudar! </p>
+                    <a href="biblioteca.html">Todos Livros</a>
+                </div>
+                <div class="swiper-slide slide-hero-three">
+                    <h1>Explore Nossa Biblioteca</h1>
+                    <p>Se pretende ter uma experiência enriquecedora fazendo uma visita ao nosso Instituto, é bem-vindo.
+                        Pois, poderá descobrir onde tudo começou. Encontre títulos de diversas áreas do conhecimento
+                        organizados por categorias, livros
+                        acadêmicos, artigos científicos e materiais exclusivos para sua formação. </p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!--============================= DESTAQUE DA SEMANA =============================-->
+    <section class="container-destaque" id="destaque">
+
+        <h2 class="section-title">Destaque da Semana</h2>
+        <div class="destaque">
+            <img src="/public/images/book (2).png" alt="destaque book\">
+            <div class="content-des">
+                <h2>Maria Madalenna</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, tenetur dolor. Quas eum
+                    excepturi
+                    consequatur at tenetur, ratione nihil repellendus atque quis, similique pariatur rerum ut totam
+                    nesciunt
+                    itaque ullam.
+                </p>
+                <!--  <span>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </span> -->
+                <input type="button" value="Abrir o livro">
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+    <!--============================= CATEGORIAS =============================-->
+    <section class="categorias" id="cat">
+        <h2 class="">O teu cantinho do conhecimento. Descubra as categorias que pretende</h2>
+        <div class="content">
+            <div class="card-categoria cat-1">
+                <a href="#">Matemática</a>
+            </div>
+            <div class="card-categoria cat-2">
+                <a href="#">Literatura</a>
+            </div>
+            <div class="card-categoria cat-3">
+                <a href="#">Robótica</a>
+            </div>
+            <div class="card-categoria cat-4">
+                <a href="#">Filosofia</a>
+            </div>
+            <div class="card-categoria cat-5">
+                <a href="#">Gestão e Administração</a>
+            </div>
+            <div class="card-categoria cat-6">
+                <a href="#">Direito</a>
+            </div>
+            <div class="card-categoria cat-7">
+                <a href="#">Energias Renováveis</a>
+            </div>
+            <div class="card-categoria cat-8">
+                <a href="#">Química</a>
+            </div>
+            <div class="card-categoria cat-9">
+                <a href="#">Machine Learning</a>
+            </div>
+        </div>
+        <a href="biblioteca.html" class="more">Ver Mais</a>
+    </section>
+
+    <!--============================= JORNADA =============================-->
+    <section class="jornada">
+        <img src="/public/images/team_inlib-1.jpg" alt="team iblib">
+        <div class="content">
+            <h2>1º Lugar: Prémio Revelação do Ano na UNILuanda</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus repudiandae quam error maxime
+                laudantium eligendi? Odit, voluptatibus! Inventore, asperiores quos illum quidem laudantium cum
+                reiciendis odio labore. N</p>
+        </div>
+    </section>
+
+    <!--============================= NOVIDADES =============================-->
+    <section class="news" id="news">
+        <h2 class="section-title">NOVOS LANÇAMENTOS</h2>
+        <div class="swiper newsSwiper">
+            <div class="swiper-wrapper newsWrapper">
+                <div class="swiper-slide">
+                    <div class="slide-image">
+                        <img src="/public/images/book (1).png" alt="books">
+                    </div>
+                    <div class="desc">
+                        <h3 class="title-card">Military History</h3>
+                        <p class="author">Ngombo Kipembele</p>
+                        <span>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </span>
+                        <input type="button" value="Saiba Mais">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-image">
+                        <img src="/public/images/book (1).png" alt="books">
+                    </div>
+                    <div class="desc">
+                        <h3 class="title-card">Military History</h3>
+                        <p class="author">Auz drag</p>
+                        <span>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </span>
+                        <input type="button" value="Saiba Mais">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-image">
+                        <img src="/public/images/book (1).png" alt="books">
+                    </div>
+                    <div class="desc">
+                        <h3 class="title-card">Military History</h3>
+                        <p class="author">Leaonardo Davinci</p>
+                        <span>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </span>
+                        <input type="button" value="Saiba Mais">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-image">
+                        <img src="/public/images/book (1).png" alt="books">
+                    </div>
+                    <div class="desc">
+                        <h3 class="title-card">Military History</h3>
+                        <p class="author">Lau Jxmmy</p>
+                        <span>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </span>
+                        <input type="button" value="Saiba Mais">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-image">
+                        <img src="/public/images/book (1).png" alt="books">
+                    </div>
+                    <div class="desc">
+                        <h3 class="title-card">Military History</h3>
+                        <p class="author">Eryy Silva</p>
+                        <span>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </span>
+                        <input type="button" value="Saiba Mais">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-image">
+                        <img src="/public/images/book (1).png" alt="books">
+                    </div>
+                    <div class="desc">
+                        <h3 class="title-card">Military History</h3>
+                        <p class="author">Ntela Riches</p>
+                        <span>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </span>
+                        <input type="button" value="Saiba Mais">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-image">
+                        <img src="/public/images/book (1).png" alt="books">
+                    </div>
+                    <div class="desc">
+                        <h3 class="title-card">Military History</h3>
+                        <p class="author">Angela La Polegar</p>
+                        <span>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </span>
+                        <input type="button" value="Saiba Mais">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide-image">
+                        <img src="/public/images/book (1).png" alt="books">
+                    </div>
+                    <div class="desc">
+                        <h3 class="title-card">Military History</h3>
+                        <p class="author">Andrelé Formator</p>
+                        <span>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </span>
+                        <input type="button" value="Saiba Mais">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!--============================= STATS =============================-->
+    <section class="container stats">
+        <h2 class="section-title">Estatísticas</h2>
+        <div class="estatisticas">
+            <div class="bola-circular">
+                <h2 class="counter1">+0</h2>
+                <p>Inscritos</p>
+            </div>
+            <div class="bola-circular">
+                <h2 class="counter2">+0</h2>
+                <p>Livros disponíveis</p>
+            </div>
+            <div class="bola-circular">
+                <h2 class="counter3">+0</h2>
+                <p>Categorias</p>
+            </div>
+            <div class="bola-circular">
+                <h2 class="counter4">+0</h2>
+                <p>Doações de Livros</p>
+            </div>
+        </div>
+    </section>
+
+    <!--============================= FOOTER =============================-->
+    <footer>
+        <div class="rodape-container">
+            <div class="col">
+                <img src="/public/images/logo.png" alt="logo">
+                <p id="text">O projeto da biblioteca digital InLib é uma iniciativa do <b>CEICD -
+                        Centro de Investigação Científica e Desenvolvimento</b> do
+                    Instiuto de Tecnologias de Informação e Comunicação
+                    afeta à Universidade de Luanda.
+                </p>
+            </div>
+            <div class="col">
+                <h3>Links de Navegação <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="biblioteca.html">Biblioteca</a></li>
+                    <li><a href="doacoes.html">Doações de Livros</a></li>
+                    <li><a href="suporte.html">Suporte</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>INSTIC <div class="underline"><span></span></div>
+                </h3>
+                <p><i class="fas fa-map"></i> Bairro dos CTT´s km 7, Rangel.</p>
+                <p><i class="fas fa-phone"></i> (+244) 222 041 728 / 921 440 435</p>
+                <p id="email"><i class="fas fa-envelope"></i> suporte@inlib.com</p>
+            </div>
+            <div class="col">
+                <h3>Inscreva-se na nossa Newsletter<div class="underline"><span></span></div>
+                </h3>
+                <form action="">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Digite o seu e-mail" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p id="copyright">
+            &copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script>. InLib - Todos os Direitos Reservados.
+        </p>
+    </footer>
+</body>
+
+</html>

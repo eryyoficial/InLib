@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/biblioteca.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Catálogo de Livros</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <aside>
+            <div class="aside-search">
+                <h3>Filtros de Pesquisa</h3>
+                <a href="biblioteca.html">Resetar</a>
+            </div>
+            <form method="get" action="biblioteca.html" class="formulario-search">
+                <div class="div-pesquisa">
+                    <a class="link-search" href="#">
+                        <i class='bx bx-search'></i>
+                    </a>
+                    <input class="btn-search" type="text" placeholder="Pesquisar.." required>
+                </div>
+                <div class="filtro-search">
+                    <select>
+                        <option disabled>Idioma</option>
+                        <option value="Português">Português</option>
+                        <option value="Inglês">Inglês</option>
+                        <option value="Espanhol">Espanhol</option>
+                    </select>
+                    <select>
+                        <option disabled>Ano</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
+                    <select>
+                        <option disabled>Avaliação</option>
+                        <option value="1" class="stars">★</option>
+                        <option value="2" class="stars">★★</option>
+                        <option value="3" class="stars">★★★</option>
+                        <option value="4" class="stars">★★★★</option>
+                        <option value="5" class="stars">★★★★★</option>
+                    </select>
+                </div>
+                <input class="data-search" type="date" id="start-date" name="start-date">
+                <a class="categoria-link-search" href="#">Categorias<i class='bx bx-chevron-down'></i></a>
+                <div class="categoria">
+                    <a href="#">Ficção</a>
+                    <div class="subcategoria">
+                        <label><input type="checkbox"> Aventura</label>
+                        <label><input type="checkbox"> Fantasia</label>
+                    </div>
+                    <a href="#">Romance</a>
+                    <div class="subcategoria">
+                        <label><input type="checkbox"> Contemporâneo</label>
+                        <label><input type="checkbox"> Histórico</label>
+                    </div>
+                    <a href="#">Biografias</a>
+                    <div class="subcategoria">
+                        <label><input type="checkbox"> Políticos</label>
+                        <label><input type="checkbox"> Cientistas</label>
+                    </div>
+                    <a href="#">Ciência</a>
+                    <div class="subcategoria">
+                        <label><input type="checkbox"> Física</label>
+                        <label><input type="checkbox"> Biologia</label>
+                    </div>
+                    <a href="#">Tecnologia</a>
+                    <div class="subcategoria">
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> Programação</label>
+                        <label><input type="checkbox"> IA</label>
+                        <label><input type="checkbox"> pão</label>
+                        <label><input type="checkbox"> IA</label>
+                    </div>
+                </div>
+            </form>
+        </aside>
+
+        <main>
+            <section class="section-categoria">
+                <h2>Recomendados</h2>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★★</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-categoria">
+                <h2>Tecnologia e Informática</h2>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★★</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-categoria">
+                <h2>Ciências Exatas</h2>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★★</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-categoria">
+                <h2>Comunicação e Mídia</h2>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★★</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-categoria">
+                <h2>Ciências Biológicas</h2>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★★</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-categoria">
+                <h2>Ciências Sociais e Humanas</h2>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★★</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-categoria">
+                <h2>Ciências Econômicas e Administração</h2>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★★</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-categoria">
+                <h2>Artes e Design</h2>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★★</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-categoria">
+                <h2>Linguística e Letras</h2>
+                <div class="carousel">
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★★</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★★☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/public/images/book (1).png" alt="Capa do Livro">
+                        <div class="desc">
+
+                            <h4>Título do Livro</h4>
+                            <p>Autor</p>
+                            <div class="avaliacao">★★★☆☆</div>
+                            <button>Abrir Livro</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

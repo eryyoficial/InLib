@@ -1,0 +1,234 @@
+/*========================== TIPOGRAFIA ==========================*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*========================== VARIÁVEIS DE CONTROLO ==========================*/
+:root {
+
+    /*============================================== COLORS ID ==============================================*/
+    /* CINZA */
+    --color-gray-light: #F4F2F2;
+    --color-gray-normal: #D9D9D9;
+    --color-gray-normal-2: #D1CFCF;
+    --color-gray-dark: #B8B8B8;
+    --color-gray-darkness: #858585;
+
+    /* AZUL */
+    --color-blue-first: #1B326D;
+    --color-blue-first-2: #516491;
+    --color-blue-first-3: #112145;
+    --color-blue-second-lighten: #D5DAE5;
+    --color-blue-second: #A5B2D3;
+    --color-blue-second-light: #D4DDFA;
+    --color-blue-third: #D4DDFA;
+    --color-blue-third-light: #ECF1FF;
+    --color-blue-light: #F4F9FC;
+    --color-blue-lighten: #F6F8FF;
+
+    /* BRANCO */
+    --color-white: #FFFFFF;
+    --color-white-2: #edf2f7;
+    --color-white-3: #f2f2f2;
+
+    /* PRETO */
+    --color-black: #212121;
+    --color-black-2: #353535;
+    --color-black-3: #464646;
+
+    /* OUTRAS */
+    --color-green: #01E397;
+    --color-green-2: #18E49F;
+    --color-green-2-light: #EAFAF0;
+    --color-green-3: #1FC7CB;
+    --color-green-3-light: #E7F9F9;
+    --color-orange: #FA8544;
+    --color-red: #e72222;
+    --color-red-light: #ffcece;
+    --color-yellow: #E8B209;
+
+    /*============================================== FONT FAMILY ==============================================*/
+    --font-family-body: "Inter", serif;
+    /* --font-family-title: "Playfair Display", serif; */
+    --font-family-title: "Exo 2", serif;
+
+    /*============================================== FONT WEIGHT ==============================================*/
+    --weight-light: 400;
+    --weight-normal: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+
+    /*============================================== FONT SIZE ==============================================*/
+    --size-small: .875rem;
+    --size-smaller: .938;
+    --size-normal: 1rem;
+    --size-large: 1.25rem;
+    --size-X-large: 1.5rem;
+    --size-big: 2rem;
+    --size-biggest: 3rem;
+    --size-super-biggest: 4rem;
+
+    /*============================================== BOX-SHADOW ==============================================*/
+    --shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    /*============================================== RADIUS BORDERS ==============================================*/
+    --radius-first: 5px;
+    --radius-second: 10px;
+    --radius-third: 30px;
+
+    /*============================================== RADIUS BORDERS ==============================================*/
+    --z-indez-1: 99;
+    --z-indez-2: 88;
+    --z-indez-3: 77;
+    --z-indez-4: 66;
+    --z-indez-5: 55;
+
+
+
+
+
+
+    --azul-claro: #e0ecff;
+    --azul: #008fdc;
+    --branco: #fff;
+    --branco-azul: #f4f9fc;
+    /* --branco-teste: #f4f9fc; */
+    --cinza: #f5f5f5;
+    --cinza-escuro: #858585;
+    --azul-dark: #004164;
+    --azul-light: #006296;
+    --id-visual-2: #2d0b00;
+    --preto: #353535;
+    --preto2: #464646;
+    --whatsapp: #075e54;
+    --facebook: #3b5998;
+    --linkedin: #0e76a8;
+
+
+}
+
+
+
+
+
+/*============================================== PRINCIPAIS TAGS ==============================================*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-body);
+    color: var(--preto);
+    background-color: var(--color-gray-light);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+h1,
+h2 {
+    font-family: var(--font-family-title);
+    text-transform: uppercase;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.container {
+    width: 70%;
+    padding: 2rem;
+    background-color: var(--color-white);
+    border-radius: var(--radius-second);
+}
+
+.bx-donate-heart{
+    margin: auto;
+    font-size: var(--size-biggest);
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: var(--color-blue-light);
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+/* Estilizando o formulário de doação */
+.doacao-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Estudante</title>
+    <link rel="stylesheet" href="../public/css/editperfil.css">
+    <link rel="stylesheet" href="../public/css/editprofiles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="/public/js/editprofile.js" defer></script>
+</head>
+
+<body>
+
+    <main class="profile-page">
+        <section class="profile-container">
+            <h1>Editar Perfil</h1>
+            <form action="perfil.html">
+                <div class="space-photo">
+                    <div class="profile-pic">
+                        <label class="-label" for="file">
+                            <span class="glyphicon glyphicon-camera"></span>
+                            <span>Atualizar Foto</span>
+                        </label>
+                        <input id="file" type="file" onchange="loadFile(event)" />
+                        <img src="/public/images/user-herminio.jpg" id="output" width="200" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Seu Nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="student-id">Nº de Processo</label>
+                    <input type="text" id="student-id" placeholder="Seu ID" required>
+                </div>
+                <div class="form-group">
+                    <label for="course">Curso</label>
+                    <select id="course" required>
+                        <option>Engenharia Informática</option>
+                        <option>Telecomunicações</option>
+                        <option>Gestão Informática</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="unit">Unidade Orgânica</label>
+                    <select id="unit" required>
+                        <option>INSTIC</option>
+                        <option>IPGEST</option>
+                        <option>Faculdade de Artes e Relações Humanas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Número de Telefone</label>
+                    <input type="tel" id="phone" placeholder="Seu Telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="shift">Turno</label>
+                    <select id="shift" required>
+                        <option>Laboral</option>
+                        <option>Pós-Laboral</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-save">Salvar Alterações</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

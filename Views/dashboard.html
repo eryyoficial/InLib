@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador</title>
+    <link rel="stylesheet" href="/public/fonts/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/public/css/styleadmin.css">
+    <link rel="shortcut icon" href="/public/images/logo.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topo">
+            <div class="logo">
+                <a href="#">
+                    <img src="/public/images/logo.png" alt="logo-inlib">
+                </a>
+            </div>
+            <div class="pesquisa">
+                <input type="text" id="pesquisa" placeholder="pesquisar...">
+                <label for="pesquisa"><i class="fas fa-search"></i></label>
+            </div>
+
+            <i class="fas fa-bell"></i>
+
+            <div class="usuario">
+                <img src="/public/images/user-herminio.jpg" onclick="toggleMenu()" alt="foto-do-usuario">
+                <i class="fas fa-chevron-down"></i>
+                <div class="menu-perfil" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="icone-fechar">
+                            <i class="fas fa-times" onclick="toggleMenu()"></i>
+                        </div>
+                        <div class="usuario-info">
+                            <h5>Nome do Usuário</h5>
+                        </div>
+                        <hr>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fas fa-user"></i>
+                            <p>Editar Perfil</p>
+                            <span><i class="fas fa-chevron-right"></i></span> 
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fas fa-moon"></i>
+                            <p>Tema de fundo</p>
+                            <span><i class="fas fa-chevron-right"></i></span> 
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fas fa-cog"></i>
+                            <p>Definições</p>
+                            <span><i class="fas fa-chevron-right"></i></span> 
+                        </a>
+                        <a href="#" class="sub-menu-link">
+                            <i class="fas fa-door-open"></i>
+                            <p>Sair</p>
+                            <span><i class="fas fa-chevron-right"></i></span> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lado" id="lado">
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fas fa-home"></i>
+                        <div>Página Inicial</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-book-open"></i>
+                        <div>Livros</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-users"></i>
+                        <div>Usuários</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-star"></i>
+                        <div>Avaliações</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="principal">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-conteudo">
+                        <div class="numero">123</div>
+                        <div class="card-nome">Livros</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-conteudo">
+                        <div class="numero">123</div>
+                        <div class="card-nome">Estudantes Externos</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-conteudo">
+                        <div class="numero">123</div>
+                        <div class="card-nome">Estudantes Internos</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-conteudo">
+                        <div class="numero">123</div>
+                        <div class="card-nome">Categorias</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h3>Livros Acessados(desde Janeiro)</h3>
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div class="chart" id="doughnut-chart">
+                    <h3>Usuários</h3>
+                    <canvas id="doughnut"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Importação de Javascript-->
+
+    <script src="/public/js/chart1.js"></script>
+    <script src="/public/js/chart2.js"></script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("abrir-menu");
+        }
+
+        var menuToggle = document.getElementById("menu-toggle");
+        var sidebarWrapper = document.getElementById("lado");
+
+        menuToggle.onclick = function () {
+            sidebarWrapper.classList.toggle("toggled");
+        };
+    </script>
+</body>
+</html>

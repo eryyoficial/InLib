@@ -1,0 +1,436 @@
+/*========================== TIPOGRAFIA ==========================*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*========================== VARIÁVEIS DE CONTROLO ==========================*/
+:root {
+
+    /*============================================== COLORS ID ==============================================*/
+    /* CINZA */
+    --color-gray-light: #F4F2F2;
+    --color-gray-normal: #D9D9D9;
+    --color-gray-normal-2: #D1CFCF;
+    --color-gray-dark: #B8B8B8;
+    --color-gray-darkness: #858585;
+
+    /* AZUL */
+    --color-blue-first: #1B326D;
+    --color-blue-first-2: #516491;
+    --color-blue-first-3: #112145;
+    --color-blue-second-lighten: #D5DAE5;
+    --color-blue-second: #A5B2D3;
+    --color-blue-second-light: #D4DDFA;
+    --color-blue-third: #D4DDFA;
+    --color-blue-third-light: #ECF1FF;
+    --color-blue-light: #F4F9FC;
+    --color-blue-lighten: #F6F8FF;
+
+    /* BRANCO */
+    --color-white: #FFFFFF;
+    --color-white-2: #edf2f7;
+    --color-white-3: #f2f2f2;
+
+    /* PRETO */
+    --color-black: #212121;
+    --color-black-2: #353535;
+    --color-black-3: #464646;
+
+    /* OUTRAS */
+    --color-green: #01E397;
+    --color-green-2: #18E49F;
+    --color-green-2-light: #EAFAF0;
+    --color-green-3: #1FC7CB;
+    --color-green-3-light: #E7F9F9;
+    --color-orange: #FA8544;
+    --color-red: #e72222;
+    --color-red-light: #ffcece;
+    --color-yellow: #E8B209;
+    --color-yellow-2: rgb(223, 186, 0);;
+
+    /*============================================== FONT FAMILY ==============================================*/
+    --font-family-body: "Inter", serif;
+    /* --font-family-title: "Playfair Display", serif; */
+    --font-family-title: "Exo 2", serif;
+
+    /*============================================== FONT WEIGHT ==============================================*/
+    --weight-light: 400;
+    --weight-normal: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+
+    /*============================================== FONT SIZE ==============================================*/
+    --size-small: .875rem;
+    --size-smaller: .938;
+    --size-normal: 1rem;
+    --size-large: 1.25rem;
+    --size-X-large: 1.5rem;
+    --size-big: 2rem;
+    --size-biggest: 3rem;
+    --size-super-biggest: 4rem;
+
+    /*============================================== BOX-SHADOW ==============================================*/
+    --shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    /*============================================== RADIUS BORDERS ==============================================*/
+    --radius-first: 5px;
+    --radius-second: 10px;
+    --radius-third: 30px;
+
+    /*============================================== RADIUS BORDERS ==============================================*/
+    --z-indez-1: 99;
+    --z-indez-2: 88;
+    --z-indez-3: 77;
+    --z-indez-4: 66;
+    --z-indez-5: 55;
+
+
+
+
+
+
+    --azul-claro: #e0ecff;
+    --azul: #008fdc;
+    --branco: #fff;
+    --branco-azul: #f4f9fc;
+    /* --branco-teste: #f4f9fc; */
+    --cinza: #f5f5f5;
+    --cinza-escuro: #858585;
+    --azul-dark: #004164;
+    --azul-light: #006296;
+    --id-visual-2: #2d0b00;
+    --preto: #353535;
+    --preto2: #464646;
+    --whatsapp: #075e54;
+    --facebook: #3b5998;
+    --linkedin: #0e76a8;
+
+
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    font-family: var(--font-family-body);
+    background-color: var(--color-gray-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 2rem;
+    margin: 20px auto;
+}
+
+aside {
+    height: 100vh;                /* O sidebar ocupa toda a altura da tela */
+    position: sticky;             /* Sidebar fixa na tela */
+    top: 0;                       /* Deixa o sidebar flexível */
+    background: var(--color-white); /* Cor de fundo do sidebar */
+    border-radius: 8px;           /* Bordas arredondadas */
+    padding: 20px;                /* Espaçamento interno */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    
+    overflow-y: auto;             /* Adiciona rolagem vertical */
+    max-height: 100vh;            /* Garante que a altura máxima seja a altura da tela */
+}
+
+/* Estilo personalizado para a barra de rolagem */
+aside::-webkit-scrollbar {
+    width: .65rem; /* Largura da barra de rolagem */
+    border-radius: 8px; /* Borda arredondada */
+}
+
+aside::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Cor do "polegar" da barra de rolagem */
+    border-radius: 8px; /* Arredonda o polegar */
+    border: 3px solid rgb(255, 255, 255); /* Borda branca suave */
+}
+
+aside::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(95, 95, 95, 0.4); /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo das setas da barra de rolagem */
+aside::-webkit-scrollbar-button {
+    background-color: transparent; /* Botões de rolagem transparentes */
+    border: none;
+}
+
+aside::-webkit-scrollbar-button:vertical:decrement, aside::-webkit-scrollbar-button:vertical:increment {
+    background-color: transparent; /* Sem cor de fundo */
+}
+
+aside::-webkit-scrollbar-button:vertical:decrement:hover,
+aside::-webkit-scrollbar-button:vertical:increment:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo suave ao passar o mouse */
+    border-radius: 50%; /* Tornar os botões circulares */
+}
+
+
+
+
+
+.aside-search{
+    display: flex;
+    justify-content: space-between;
+}
+
+.aside-search h3{
+    color: var(--color-gray-darkness);
+    font-size: var(--size-normal);
+    text-transform: uppercase;
+}
+
+.aside-search a{
+    color: var(--color-blue-first-2);
+    font-size: var(--size-smaller);
+    transition: .4s;
+    text-decoration: none;
+    font-weight: var(--weight-semibold);
+}
+
+.aside-search a:hover{
+    color: var(--color-blue-first);
+}
+
+
+.formulario-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.div-pesquisa{
+    display: flex;
+    width: 100%;
+    margin: 3rem 0 2rem;
+}
+
+.formulario-search .link-search, .formulario-search .btn-search{
+    border: 1px solid var(--color-gray-dark);
+    background: transparent;
+    font-size: var(--size-normal);
+}
+
+.formulario-search .link-search{
+    flex: 1;
+    background-color: var(--color-white);
+    padding: .7rem;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    border-top-left-radius: var(--radius-third);
+    border-bottom-left-radius: var(--radius-third);
+    transition: .4s;
+}
+
+.formulario-search .link-search:hover{
+    background-color: #f4f4f4;
+}
+
+.formulario-search .link-search i{
+    font-weight: var(--weight-semibold);
+    font-size: var(--size-large);
+    color: var(--color-blue-first-2);
+    transition: .4s;
+}
+
+.formulario-search .link-search i:hover{
+    color: var(--color-blue-first);
+}
+
+.formulario-search .btn-search{
+    flex: 9;
+    background-color: var(--color-white);
+    padding: 0.63rem;
+    border-top-right-radius: var(--radius-third);
+    border-bottom-right-radius: var(--radius-third);
+}
+
+.filtro-search{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.filtro-search select, .data-search{
+    border-radius: var(--radius-second);
+    border: 1px solid var(--color-gray-dark);
+    padding: 0.45rem;
+    color: var(--color-black-3);
+}
+
+.filtro-search select .stars{
+    color: var(--color-yellow);
+}
+
+.data-search{
+    margin-bottom: 1rem;
+}
+
+
+.categoria {
+    margin-bottom: 15px;
+    padding: 0 0 0 1rem;
+}
+
+
+aside .categoria-link-search {
+    font-weight: var(--weight-semibold);
+    margin: 1rem 0 1rem;
+    text-decoration: none;
+    font-size: var(--size-X-large);
+    color: var(--color-blue-first);
+}
+
+aside .categoria-link-search .bx-chevron-down{
+    transition: 1s;
+}
+
+aside .categoria-link-search:hover .bx-chevron-down{
+    transform: rotate(-180deg);
+}
+
+.categoria>a {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--color-blue-first-2);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.categoria>a:hover {
+    text-decoration: underline;
+}
+
+.subcategoria {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.subcategoria label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    color: var(--cinza-escuro);
+}
+
+main {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    border-radius: 8px;
+}
+
+.section-categoria{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: var(--radius-second);
+    padding: 2rem;
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.section-categoria .carousel{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    border-radius: var(--radius-second);
+    display: flex;
+    padding: 1rem;
+    gap: .5rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    background-color: var(--color-white);
+}
+
+.card img {
+    cursor: pointer;
+    background-color: var(--color-blue-third-light);
+    width: 100px;
+}
+
+.section-categoria .carousel .desc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card h4 {
+    margin-top: 1rem;
+    font-size: var(--size-large);
+    color: var(--color-black-3);
+}
+
+.card p {
+    font-size: var(--size-smaller);
+    color: var(--cinza-escuro);
+}
+
+.card .avaliacao {
+    color: var(--color-yellow);
+    font-size: var(--size-smaller);
+}
+
+.card button {
+    background: var(--color-blue-first);
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--radius-second);
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 1.5rem;
+    padding: .3rem 1rem;
+    transition: .4s;
+}
+
+.card button:hover {
+    background: var(--color-blue-first-2);
+    scale: 1.02;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}

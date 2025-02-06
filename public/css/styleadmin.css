@@ -1,0 +1,490 @@
+/*==========================Cores e Configurações iniciais==========================*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --azul-claro: #e0ecff;
+    --azul: #096393;
+    --branco: #fff;
+    --cinza:  #f5f5f5;
+    --cinza-escuro: #888;
+    --azul-dark:  rgb(0, 9, 60);
+    --id-visual-2:  #2d0b00;
+    --preto: #000000;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+/*==========================Estilização de Navbar==========================*/
+
+.logo img{
+    width: 90px;
+    cursor: pointer;
+}
+
+.pesquisa{
+    position: relative;
+    width: 60%;
+    justify-self: center;
+}
+
+.pesquisa i{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    cursor: pointer;
+    color: var(--azul);
+    font-size: 20px;
+}
+
+.fa-bell{
+    margin: 5px;
+    font-size: 20px;
+    color: var(--branco);
+}
+
+.fa-chevron-down{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 22px;
+    font-size: 15px;
+    bottom: 20px;
+    text-align: center;
+    border-radius: 40%;
+    background: var(--azul);
+    color: var(--branco);
+    cursor: pointer;
+}
+
+.topo i:hover{
+    transition: ease-in .1s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.pesquisa input{
+    width: 100%;
+    height: 40px;
+    padding: 0 40px;
+    font-size: 12px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    color: var(--cinza-escuro);
+    background: var(--cinza);
+}
+
+.topo{
+    position: fixed;
+    background:#04476e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 75px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr 10fr 0.4fr 1fr;
+    align-items: center;
+    z-index: 1;
+}
+
+/*==========================Dropdown==========================*/
+.usuario{
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.usuario img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 0px;
+    object-fit: cover;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.usuario:hover img{
+    transition: ease-in .1s;
+    transform: scale(1.2);
+}
+
+.menu-perfil{ 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.8s;
+    border-radius: 10px;
+}
+
+.menu-perfil.abrir-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background: var(--cinza);
+    padding: 20px;
+}
+
+.usuario-info{
+    display: flex;
+    justify-content: center;
+}
+
+.icone-fechar{
+    display: flex;
+    justify-content: end;
+}
+
+.usuario-info h5{
+    font-weight: 500;
+    color: var(--cinza-escuro);
+    cursor: pointer;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link:hover{
+    color: var(--azul);
+    transform: translateX(5px);
+}
+
+.sub-menu-link p{
+    width: 100%;
+}
+
+.sub-menu-link i{
+    width: 40px;
+    box-flex-group: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span{
+    font-size: 13px;
+    right: 0;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link span i{
+    color: var(--cinza-escuro);
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+    font-weight: 400;
+}
+
+/*==========================Estilização de Sidebar==========================*/
+.lado{
+    position: fixed;
+    top: 60px;
+    width: 260px;
+    height: calc(100% - 60px);
+    background: var(--azul);
+    overflow-x: hidden;
+}
+
+.lado ul{
+    margin-top: 28px;
+}
+
+.lado ul li{
+   width: 100%;
+   list-style: none;
+   border-radius: 12px;
+   list-style: none;
+   padding: 8px;
+}
+
+.lado ul li:hover{
+    background: var(--branco);
+    transition: ease-in 0.4s;
+}
+
+.lado ul li a{
+    width: 100%;
+    text-decoration: none;
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+}
+
+.lado ul li a:hover{
+    color: var(--azul);
+}
+
+.lado ul li a i{
+    min-width: 60px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*==========================Estilização de Main==========================*/
+.principal{
+    position: absolute;
+    top: 60px;
+    left: 260px;
+    width: calc(100% - 260px);
+    min-height: calc(100vh - 60px);
+    background: var(--cinza);
+}
+
+.cards{
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    cursor: pointer;
+}
+
+.cards .card{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+.cards .card:hover{
+    background: var(--azul);
+    transform: scale(1.1);
+}
+
+.cards .card:hover .numero{
+    color: var(--branco);
+}
+
+.cards .card:hover .card-nome{
+    color: var(--branco);
+}
+
+.cards .card:hover .icon i{
+    color: var(--branco);
+    font-size: 50px;
+    transition: ease-in 0.5s;
+}
+
+.numero{
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--azul);
+}
+
+.card-nome{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--cinza-escuro);
+}
+
+.icon i{
+    font-size: 45px;
+    color: var(--azul);
+}
+
+/*==========================Estilização dos Gráficos*==========================*/
+.charts{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.chart{
+    background: var(--branco);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 7 25px rgba(0, 0, 0, 0.08);
+    width: 95%;
+}
+
+.chart h3{
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: var(--cinza-escuro);
+    text-align: center;
+}
+
+
+/*==========================Responsividade==========================*/
+@media(max-width:1115px){
+    .lado{
+        width: 60px;
+    }
+    .principal{
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+
+    .fa-bell{
+        margin: 7px;
+    }
+    .lado ul{
+        margin-top: 20px;
+    }
+
+    .logo img{
+        width: 100px;
+        cursor: pointer;
+    }
+    
+}
+
+@media(max-width:880px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .charts{
+        grid-template-columns: 1fr;
+    }
+
+    #doughnut-chart{
+        padding: 10px;
+    }
+
+    #doughnut{
+        padding: 10px; 
+    }
+
+    .fa-bell{
+        margin: 7px;
+    }
+
+    .fa-sort-down{
+        position: absolute;
+        left: 22px;
+        font-size: 23px;
+        bottom: 18px;
+    }
+
+    .lado ul li a i{
+        text-align: start;
+        margin: 10px;
+    }
+
+    .menu-perfil{ 
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 250px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.8s;
+        border-radius: 10px;
+    }
+    
+    .menu-perfil.abrir-menu{
+        max-height: 300px;
+    }
+    
+    .sub-menu{
+        background: var(--cinza);
+        padding: 20px;
+    }
+
+}
+
+
+@media(max-width:500px){
+    .topo{
+        grid-template-columns: 1fr 5fr 0.4fr 1fr;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .logo h3{
+        font-size: 20px;
+    }
+
+    .pesquisa{
+        width: 80%;
+    }
+
+    .pesquisa input{
+        padding: 0 20px;
+    }
+
+    .fa-bell{
+        margin: 7px;
+    }
+
+    .usuario{
+        width: 20px;
+        height: 20px;
+        bottom: 20px;
+    }
+
+    #doughnut-chart{
+        padding: 5px;
+    }
+
+    #doughnut{
+        padding: 0;
+    }
+
+    .menu-perfil{ 
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 300px;
+    }
+    
+    .menu-perfil.abrir-menu{
+        max-height: 300px;
+    }
+    
+    .sub-menu{
+        padding: 10px;
+    }
+}
+
+@media(max-width:480px) and (min-width:280px){
+    .fa-chevron-down{
+        width: 15px;
+        height: 15px;
+        left: 22px;
+        top: 36px;
+    }
+
+    .pesquisa i{
+        font-size: 15px;
+    }
+    .pesquisa input{
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,202 @@
+/*==========================Cores e Configurações iniciais==========================*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+
+    /*============================================== COLORS ID ==============================================*/
+    /* CINZA */
+    --color-gray-light: #F4F2F2;
+    --color-gray-normal: #D9D9D9;
+    --color-gray-normal-2: #D1CFCF;
+    --color-gray-dark: #B8B8B8;
+    --color-gray-darkness: #858585;
+
+    /* AZUL */
+    --color-blue-first: #1B326D;
+    --color-blue-first-2: #516491;
+    --color-blue-first-3: #112145;
+    --color-blue-second-lighten: #D5DAE5;
+    --color-blue-second: #A5B2D3;
+    --color-blue-second-light: #D4DDFA;
+    --color-blue-third: #D4DDFA;
+    --color-blue-third-light: #ECF1FF;
+    --color-blue-light: #F4F9FC;
+    --color-blue-lighten: #F6F8FF;
+
+    /* BRANCO */
+    --color-white: #FFFFFF;
+    --color-white-2: #edf2f7;
+    --color-white-3: #f2f2f2;
+
+    /* PRETO */
+    --color-black: #212121;
+    --color-black-2: #353535;
+    --color-black-3: #464646;
+
+    /* OUTRAS */
+    --color-green: #01E397;
+    --color-green-2: #18E49F;
+    --color-green-2-light: #EAFAF0;
+    --color-green-3: #1FC7CB;
+    --color-green-3-light: #E7F9F9;
+    --color-orange: #FA8544;
+    --color-red: #e72222;
+    --color-red-light: #ffcece;
+    --color-yellow: #E8B209;
+
+    /*============================================== FONT FAMILY ==============================================*/
+    --font-family-body: "Inter", serif;
+    /* --font-family-title: "Playfair Display", serif; */
+    --font-family-title: "Exo 2", serif;
+
+    /*============================================== FONT WEIGHT ==============================================*/
+    --weight-light: 400;
+    --weight-normal: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+
+    /*============================================== FONT SIZE ==============================================*/
+    --size-small: .875rem;
+    --size-smaller: .938;
+    --size-normal: 1rem;
+    --size-large: 1.25rem;
+    --size-X-large: 1.5rem;
+    --size-big: 2rem;
+    --size-biggest: 3rem;
+    --size-super-biggest: 4rem;
+
+    /*============================================== BOX-SHADOW ==============================================*/
+    --shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    /*============================================== RADIUS BORDERS ==============================================*/
+    --radius-first: 5px;
+    --radius-second: 10px;
+    --radius-third: 30px;
+
+    /*============================================== RADIUS BORDERS ==============================================*/
+    --z-indez-1: 99;
+    --z-indez-2: 88;
+    --z-indez-3: 77;
+    --z-indez-4: 66;
+    --z-indez-5: 55;
+
+
+
+
+
+    --azul-claro: #e0ecff;
+    --azul: #008fdc;
+    --branco: #fff;
+    --cinza:  #f5f5f5;
+    --cinza-escuro: #888;
+    --azul-dark:  #00093c;
+    --id-visual-2:  #2d0b00;
+    --preto: #000;
+    --whatsapp: #075e54;
+    --facebook: #3b5998;
+    --linkedin: #0e76a8;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-gray-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.perfil-container {
+  background: var(--color-white);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.perfil-container h1{
+  font-family: var(--font-family-title);
+  margin-bottom: 2rem;
+}
+
+.perfil-foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background-image: url('/public/images/user-herminio.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 5px solid var(--color-blue-first-2);
+}
+
+h2 {
+  margin: 10px 0 15px;
+  color: var(--color-blue-first-2);
+  font-size: 24px;
+}
+
+p {
+  margin: 10px 0;
+  color: var(--cinza-escuro);
+  font-size: 16px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.stats div {
+  background: var(--cinza);
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stats div h3 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--color-blue-first-2);
+}
+
+.stats div p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: var(--cinza-escuro);
+}
+
+.secao-button {
+  margin-top: 30px;
+}
+
+.secao-button .btns {
+  text-decoration: none;
+  background-color: var(--color-blue-first);
+  color: var(--branco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.secao-button button:hover {
+  background-color: var(--color-blue-first-2);
+}

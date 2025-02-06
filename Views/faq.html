@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | InLib</title>
+    <link rel="stylesheet" href="/public/fonts/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/public/css/faq.css">
+</head>
+<body>
+  <main>
+      <div class="faq-section">
+          <h2>Perguntas Frequentes (FAQs)</h2>
+
+          <div class="faq-item">
+              <h3>Como faço para acessar os livros da biblioteca? <i class="fas fa-chevron-down"></i></h3>
+              <p>Você pode acessar os livros ao fazer login na plataforma e utilizar o botão "Ler Agora" nos livros disponíveis.</p>
+          </div>
+
+          <div class="faq-item">
+              <h3>Como adiciono livros aos favoritos? <i class="fas fa-chevron-down"></i></h3>
+              <p>Você pode adicionar livros aos favoritos clicando no ícone de coração disponível no cartão do livro.</p>
+          </div>
+
+          <div class="faq-item">
+              <h3>Posso baixar os livros da biblioteca? <i class="fas fa-chevron-down"></i></h3>
+              <p>Por enquanto, os livros estão disponíveis apenas para leitura online diretamente na plataforma.</p>
+          </div>
+
+          <div class="faq-item">
+              <h3>Há algum custo para usar a biblioteca? <i class="fas fa-chevron-down"></i></h3>
+              <p>O uso da biblioteca digital é gratuito para leitura online, mas algumas funcionalidades podem estar limitadas para assinantes premium.</p>
+          </div>
+
+          <div class="faq-item">
+              <h3>Como faço para recuperar minha senha? <i class="fas fa-chevron-down"></i></h3>
+              <p>Você pode recuperar sua senha clicando em "Esqueceu sua senha?" na tela de login e seguindo as instruções enviadas ao seu e-mail.</p>
+          </div>
+
+          <div class="faq-item">
+              <h3>Posso compartilhar livros com amigos? <i class="fas fa-chevron-down"></i></h3>
+              <p>No momento, não é possível compartilhar livros diretamente, mas você pode recomendar livros aos seus amigos utilizando os links de compartilhamento.</p>
+          </div>
+
+          <div class="faq-item">
+              <h3>Como vejo meu histórico de leitura? <i class="fas fa-chevron-down"></i></h3>
+              <p>Seu histórico de leitura pode ser acessado na aba "Meu Perfil", disponível no menu principal após o login.</p>
+          </div>
+      </div>
+  </main>
+
+  <script>
+      document.querySelectorAll('.faq-item').forEach(item => {
+          item.addEventListener('click', () => {
+              const isActive = item.classList.contains('active');
+              document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+              if (!isActive) {
+                  item.classList.add('active');
+              }
+          });
+      });
+  </script>
+</body>
+</html>
