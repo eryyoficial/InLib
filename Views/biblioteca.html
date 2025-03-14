@@ -11,6 +11,20 @@
 
 <body>
 
+    <div class="search-above">
+        <form class="search-form-pri">
+            <button class="btn-lupa" disabled><i class='bx bx-search-alt-2'></i></button>
+            <input class="btn-input-text" type="text" placeholder="Pesquisar...">
+            <button class="btn-close"><i class='bx bx-x'></i></button>
+            <button class="btn-filtro"><i class='bx bx-slider-alt'></i></button>
+
+            <div class="resultados">
+                <h3>Sem resultados...</h3>
+                <div class="resultado"></div>
+            </div>
+        </form>
+    </div>
+
     <div class="container">
         <aside>
             <div class="aside-search">
@@ -48,7 +62,8 @@
                         <option value="5" class="stars">★★★★★</option>
                     </select>
                 </div>
-                <input class="data-search" type="date" id="start-date" name="start-date" placeholder="Data de Publicação">
+                <input class="data-search" type="date" id="start-date" name="start-date"
+                    placeholder="Data de Publicação">
                 <a class="categoria-link-search" href="#">Categorias<i class='bx bx-chevron-down'></i></a>
                 <div class="categoria">
                     <a href="#">Ficção</a>

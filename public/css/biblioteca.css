@@ -125,6 +125,32 @@ body {
     justify-content: center;
 }
 
+
+.search-above{
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.search-above .search-form-pri{
+    padding: 4rem;
+    border: solid red;
+}
+
+.search-above .search-form-pri input, .search-above .search-form-pri i{
+    padding: 1rem;
+}
+
+.search-above .search-form-pri.btn-input-text{
+    width: 100%;
+}
+
+.search-above .search-form-pri {
+    color: #004164;
+}
+
+
 .container {
     display: flex;
     flex-direction: row;
@@ -137,10 +163,10 @@ aside {
     height: 100vh;                /* O sidebar ocupa toda a altura da tela */
     position: sticky;             /* Sidebar fixa na tela */
     top: 0;                       /* Deixa o sidebar flexível */
-    background: var(--color-white); /* Cor de fundo do sidebar */
+
     border-radius: 8px;           /* Bordas arredondadas */
     padding: 20px;                /* Espaçamento interno */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  Sombra suave */
     
     overflow-y: auto;             /* Adiciona rolagem vertical */
     max-height: 100vh;            /* Garante que a altura máxima seja a altura da tela */
@@ -153,9 +179,8 @@ aside::-webkit-scrollbar {
 }
 
 aside::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2); /* Cor do "polegar" da barra de rolagem */
-    border-radius: 8px; /* Arredonda o polegar */
-    border: 3px solid rgb(255, 255, 255); /* Borda branca suave */
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px; 
 }
 
 aside::-webkit-scrollbar-thumb:hover {
@@ -341,51 +366,62 @@ main {
     flex-direction: column;
     gap: 1rem;
     border-radius: var(--radius-second);
-    padding: 2rem;
     width: 100%;
-    background-color: var(--color-white);
 }
 
 .section-categoria .carousel{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
+ 
 
 .card {
     border-radius: var(--radius-second);
     display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
-    gap: .5rem;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    background-color: var(--color-white);
+    background-color: white;
 }
 
 .card img {
     cursor: pointer;
-    background-color: var(--color-blue-third-light);
-    width: 100px;
+    width: 100%;
+    transition: .4s;
+}
+
+.card img:hover{
+    scale: 1.03;
 }
 
 .section-categoria .carousel .desc{
+    margin-top: 0.5rem;
+    text-align: left;
     display: flex;
     flex-direction: column;
+    
     width: 100%;
 }
 
 .card h4 {
-    margin-top: 1rem;
-    font-size: var(--size-large);
+    margin-left: .4rem;
+    font-size: var(--size-smaller);
+    margin-bottom: .3rem;
     color: var(--color-black-3);
 }
 
 .card p {
+    margin-left: .4rem;
     font-size: var(--size-smaller);
     color: var(--cinza-escuro);
 }
 
 .card .avaliacao {
+    margin-left: .4rem;
     color: var(--color-yellow);
     font-size: var(--size-smaller);
 }
@@ -394,11 +430,10 @@ main {
     background: var(--color-blue-first);
     color: var(--color-white);
     border: none;
-    border-radius: var(--radius-second);
+    border-radius: var(--radius-first);
     cursor: pointer;
-    align-self: flex-start;
-    margin-top: 1.5rem;
-    padding: .3rem 1rem;
+    padding: .5rem 1rem;
+    margin-top: 1.2rem;
     transition: .4s;
 }
 

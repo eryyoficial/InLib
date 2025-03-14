@@ -124,21 +124,9 @@ html {
 }
 
 body {
-    height: 100vh;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: var(--font-family-body);
     color: var(--preto);
     background-color: var(--color-gray-light);
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
 }
 
 h1,
@@ -147,9 +135,6 @@ h2 {
     text-transform: uppercase;
 }
 
-li {
-    list-style: none;
-}
 
 a {
     text-decoration: none;
@@ -158,33 +143,50 @@ a {
 
 
 .container {
-    width: 70%;
-    padding: 2rem;
-    background-color: var(--color-white);
-    border-radius: var(--radius-second);
-}
-
-.bx-donate-heart{
-    margin: auto;
-    font-size: var(--size-biggest);
-    padding: 2rem;
-    border-radius: 50%;
-    background-color: var(--color-blue-light);
-}
-
-h1 {
-    text-align: center;
-    color: #4CAF50;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilizando o formulário de doação */
 .doacao-container {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 40px auto;
+    padding: 2rem;
+    background-color: var(--color-white);
+    border-radius: var(--radius-second);
+    box-shadow: var(--shadow);
+    max-width: 700px;
+ /*    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.doacao-titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.bx-donate-heart{
+    color: var(--color-blue-light);
+    font-size: var(--size-X-large);
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--color-blue-first);
+}
+
+h2 {
+    font-size: var(--size-big);
+    gap: 1rem;
+    color: var(--color-blue-first);
+}
+
+.doacao-container p{
+    margin-bottom: .5rem;
+    font-size: var(--size-small);
+    color: var(--color-gray-darkness);
 }
 
 form {
@@ -212,18 +214,20 @@ textarea {
 }
 
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--color-blue-first);
+    color: var(--color-white);
     padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: var(--radius-first);
     font-size: 16px;
+    font-weight: var(--weight-semibold);
     cursor: pointer;
     margin-top: 20px;
+    transition: .4s;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: var(--color-blue-first-2);
 }
 
 /* Responsividade */
